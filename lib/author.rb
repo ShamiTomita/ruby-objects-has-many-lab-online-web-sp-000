@@ -18,5 +18,15 @@ class Author
     add_post(post)
   end 
   
+  def post_count
+    count = 0
+    Post.all.select do |post|
+      post.author == self 
+      count+=1
+    end 
+    count 
+  end 
+
+  
   
 end 
