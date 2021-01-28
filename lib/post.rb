@@ -3,5 +3,16 @@ class Post
   @@all = []
     def initialize(title, author)
       @author = author 
-      @title = title 
+      @title = title
+      save 
+    end 
+    
+    def save
+      
+    def self.all
+      @@all
+    end 
+    
+    
+end 
       
